@@ -1,9 +1,10 @@
 <template>
-  <div id="app/olchov_birliglar">
+  <div id="app/olchov_birliglar" style="max-width: 400px">
     <h1>O'lchov Birliglar</h1>
-    <label for="app/olchov_birliglar/a">Sonni kriting</label><br>
-    <input type="number" id="app/olchov_birliglar/a" placeholder="a = " v-model="a"><br>
-    <table>
+    <label class="form-control"  for="app/olchov_birliglar/a">Sonni kriting</label>
+    <input class="form-control" type="number" id="app/olchov_birliglar/a" placeholder="a = " v-model="a"><br>
+    <table class="table">
+      <tbody>
       <tr>
         <td>{{ a }} <span>Tonna</span></td>
         <td> =</td>
@@ -24,8 +25,8 @@
         <td> =</td>
         <td>{{ a / 1000 }} <span>Kilogram</span></td>
       </tr>
+      </tbody>
     </table>
-    <br>
   </div>
 </template>
 <script>
@@ -35,10 +36,5 @@ export default {
 }
 </script>
 <style>
-
-* {
-  background-color: white; /* rgba(255, 0,0,5%); */
-  outline: none;
-}
 
 </style>

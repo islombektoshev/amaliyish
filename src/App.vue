@@ -4,7 +4,7 @@
     <ButunSonlar v-if="menu === 0"/>
     <OlchovBirliglar v-if="menu === 1"/>
     <TogriTortburchak v-if="menu === 2"/>
-    <button @click="() => {menu = -1}">Ortga</button>
+    <button class="btn btn-secondary" @click="() => {menu = -1}">Ortga</button>
   </div>
 
 </template>
@@ -41,18 +41,8 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 
-* {
-  background-color: white; /* rgba(255, 0,0,5%); */
-  outline: none;
-}
+
+
 
 </style>
